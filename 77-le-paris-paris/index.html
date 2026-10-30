@@ -3,343 +3,378 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Le Paris Paris — Brasserie face au Marché Saint‑Germain, Paris 6e</title>
-<meta name="description" content="Le Paris Paris, brasserie française face au Marché Saint‑Germain : cuisine maison, produits frais, service continu tous les jours de 9h à 23h30. 8 Rue de Montfaucon, 75006 Paris.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Paris Paris — Brasserie bistrot face au Marché Saint‑Germain, Paris 6ᵉ</title>
+<meta name="description" content="Le Paris Paris, brasserie bistrot du 6ᵉ arrondissement en face du Marché Saint‑Germain. Cuisine française moderne de saison, grande terrasse ensoleillée, cocktails, service continu de 9h à 23h.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config={theme:{extend:{colors:{rouge:'#9E1B22',bordeaux:'#5E0F14',nuit:'#22070A',creme:'#F7F0E6',sable:'#EADFCD',vert:'#1F3D2B',sauge:'#2E5A40',rose:'#E8A3A8'},fontFamily:{serif:['Fraunces','Georgia','serif'],sans:['Manrope','system-ui','sans-serif']}}}}
+tailwind.config={theme:{extend:{colors:{bordeaux:'#7E161D',rouge:'#B3262D',sapin:'#14291F',foret:'#1E3D2E',sauge:'#7E9C86',creme:'#F6EFE4',lin:'#EADFCC',rose:'#EDBDB6',encre:'#1A1414'},fontFamily:{display:['Fraunces','serif'],sans:['Manrope','sans-serif']}}}}
 </script>
 <style>
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{background:#F7F0E6;color:#22070A}
-:focus-visible{outline:3px solid #E8A3A8;outline-offset:3px;border-radius:6px}
-.grain:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.awning{height:96px;background:repeating-linear-gradient(90deg,#9E1B22 0 44px,#F7F0E6 44px 88px);-webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 22px) no-repeat,radial-gradient(circle at 22px 0,#000 21.5px,transparent 22px) bottom/44px 22px repeat-x;mask:linear-gradient(#000,#000) top/100% calc(100% - 22px) no-repeat,radial-gradient(circle at 22px 0,#000 21.5px,transparent 22px) bottom/44px 22px repeat-x}
-.kb{animation:kb 26s ease-in-out infinite alternate}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:80px}
+body{-webkit-font-smoothing:antialiased}
+*:focus-visible{outline:2px solid #EDBDB6;outline-offset:3px;border-radius:4px}
+.grain:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.awning{height:64px;background:repeating-linear-gradient(90deg,#B3262D 0 60px,#F6EFE4 60px 120px)}
+.scallop{height:30px;background:radial-gradient(circle at 30px 0,#B3262D 29px,transparent 30px) 0 0/120px 30px repeat-x,radial-gradient(circle at 90px 0,#F6EFE4 29px,transparent 30px) 0 0/120px 30px repeat-x}
+.kb{animation:kb 22s ease-in-out infinite alternate;transform-origin:60% 40%}
 @keyframes kb{from{transform:scale(1)}to{transform:scale(1.14) translate(-1.5%,1%)}}
-#loader{animation:lo .5s cubic-bezier(.7,0,.3,1) .65s forwards}
-@keyframes lo{to{transform:translateY(-100%)}}
-.glow{filter:blur(1px);box-shadow:0 0 18px 6px rgba(255,214,150,.55)}
-.marquee{animation:mq 38s linear infinite}
-@keyframes mq{to{transform:translateX(-50%)}}
-.ring:after{content:"";position:absolute;inset:0;border-radius:9999px;border:2px solid #E8A3A8;animation:rg 2.2s ease-out infinite}
-@keyframes rg{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.7);opacity:0}}
-.dot{animation:bl 1s infinite}.dot:nth-child(2){animation-delay:.15s}.dot:nth-child(3){animation-delay:.3s}
-@keyframes bl{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.spin{animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 .scrolldot{animation:sd 1.8s ease-in-out infinite}
 @keyframes sd{0%{transform:translateY(0)}60%{transform:translateY(14px)}100%{transform:translateY(0)}}
-.tile svg{transition:transform .8s cubic-bezier(.2,.7,.2,1)}.tile:hover svg{transform:scale(1.08) rotate(-1deg)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kb,.marquee,.ring:after,.scrolldot,.dot{animation:none}#loader{animation-duration:.01s;animation-delay:0s}}
+#loader{animation:lo .6s 2.4s forwards}
+@keyframes lo{to{transform:translateY(-100%)}}
+.ring:before{content:"";position:absolute;inset:0;border-radius:9999px;border:2px solid #B3262D;animation:ring 2.2s ease-out infinite}
+@keyframes ring{from{transform:scale(1)}to{transform:scale(1.6);border-color:transparent}}
+.dot{animation:dt 1s infinite}.dot:nth-child(2){animation-delay:.15s}.dot:nth-child(3){animation-delay:.3s}
+@keyframes dt{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.marquee{animation:mq 30s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+.tile svg{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.tile:hover svg{transform:scale(1.08) rotate(-2deg)}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}#loader{display:none}}
 </style>
 </head>
-<body class="font-sans antialiased overflow-x-hidden">
+<body class="bg-creme text-encre font-sans overflow-x-hidden">
 
-<div id="loader" class="fixed inset-0 z-[100] bg-bordeaux flex flex-col items-center justify-center text-creme" aria-hidden="true">
-<p class="font-serif italic text-4xl sm:text-5xl">Le Paris Paris</p>
-<span class="mt-4 h-px w-24 bg-rose"></span>
-<p class="mt-4 text-[11px] tracking-[.4em] uppercase text-rose">Brasserie · Saint‑Germain</p>
+<div id="loader" class="fixed inset-0 z-[100] bg-sapin flex flex-col items-center justify-center text-creme">
+  <div class="font-display italic text-4xl sm:text-5xl">Le Paris Paris</div>
+  <div class="mt-4 h-px w-40 bg-creme/20 overflow-hidden"><div id="loadbar" class="h-full w-full bg-rose origin-left"></div></div>
 </div>
 
-<header id="hdr" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
-<div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
-<a href="#accueil" class="text-creme leading-none" aria-label="Le Paris Paris, retour à l'accueil">
-<span class="block font-serif italic text-2xl">Le Paris Paris</span>
-<span class="block text-[10px] tracking-[.35em] uppercase text-rose mt-1">Brasserie · Paris 6e</span>
-</a>
-<nav class="hidden lg:flex items-center gap-8 text-sm text-creme/90" aria-label="Navigation principale">
-<a href="#apropos" class="hover:text-rose transition">La maison</a>
-<a href="#carte" class="hover:text-rose transition">La carte</a>
-<a href="#galerie" class="hover:text-rose transition">Ambiance</a>
-<a href="#infos" class="hover:text-rose transition">Accès & horaires</a>
-<a href="tel:+33143265056" class="hover:text-rose transition">01 43 26 50 56</a>
-<a href="#reservation" class="mag ml-2 px-6 py-3 rounded-full bg-rouge text-creme font-semibold hover:bg-rose hover:text-nuit transition">Réserver</a>
-</nav>
-<button id="burger" class="lg:hidden w-12 h-12 rounded-full bg-creme/10 backdrop-blur flex flex-col items-center justify-center gap-1.5" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav">
-<span class="b1 block w-6 h-0.5 bg-creme transition"></span><span class="b2 block w-6 h-0.5 bg-creme transition"></span>
-</button>
-</div>
+<header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between text-creme">
+    <a href="#top" class="leading-none" aria-label="Le Paris Paris — accueil">
+      <span class="font-display italic text-2xl">Le Paris Paris</span>
+      <span class="block text-[10px] tracking-[.3em] uppercase text-rose mt-1">Brasserie · Paris 6ᵉ</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm tracking-wide" aria-label="Navigation principale">
+      <a href="#maison" class="hover:text-rose transition">La maison</a>
+      <a href="#carte" class="hover:text-rose transition">L'expérience</a>
+      <a href="#galerie" class="hover:text-rose transition">Ambiances</a>
+      <a href="#avis" class="hover:text-rose transition">Avis</a>
+      <a href="#infos" class="hover:text-rose transition">Infos</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+33143265056" class="hidden sm:flex items-center gap-2 text-sm hover:text-rose transition" aria-label="Appeler le 01 43 26 50 56"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>01 43 26 50 56</a>
+      <a href="#reservation" class="magnetic bg-rouge hover:bg-bordeaux text-creme text-sm font-semibold px-5 py-2.5 rounded-full transition">Réserver</a>
+      <button id="burger" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mmenu">
+        <span class="b1 block w-6 h-px bg-creme transition"></span><span class="b2 block w-6 h-px bg-creme transition"></span>
+      </button>
+    </div>
+  </div>
 </header>
 
-<div id="mnav" class="fixed inset-0 z-40 bg-bordeaux text-creme translate-x-full transition-transform duration-500 flex flex-col justify-center px-8 lg:hidden" aria-label="Menu mobile">
-<nav class="flex flex-col gap-6 font-serif text-4xl">
-<a href="#apropos" class="ml">La maison</a><a href="#carte" class="ml">La carte</a><a href="#galerie" class="ml">Ambiance</a><a href="#infos" class="ml">Accès & horaires</a><a href="#reservation" class="ml italic text-rose">Réserver une table</a>
-</nav>
-<a href="tel:+33143265056" class="mt-10 text-sm tracking-widest uppercase text-rose">Appeler · 01 43 26 50 56</a>
+<div id="mmenu" class="fixed inset-0 z-40 bg-sapin text-creme flex flex-col justify-center px-8 translate-x-full transition-transform duration-500 lg:hidden" aria-hidden="true">
+  <nav class="flex flex-col gap-5 font-display text-4xl" aria-label="Menu mobile">
+    <a href="#maison" class="ml">La maison</a><a href="#carte" class="ml">L'expérience</a><a href="#galerie" class="ml">Ambiances</a><a href="#avis" class="ml">Avis</a><a href="#infos" class="ml">Infos pratiques</a><a href="#reservation" class="ml italic text-rose">Réserver</a>
+  </nav>
+  <a href="tel:+33143265056" class="mt-10 text-sm tracking-widest uppercase text-sauge">01 43 26 50 56</a>
 </div>
 
-<main>
-<section id="accueil" class="relative min-h-[100svh] flex items-center overflow-hidden bg-nuit text-creme grain">
-<div class="kb absolute inset-0" aria-hidden="true">
-<div class="absolute inset-0" style="background:radial-gradient(ellipse at 75% 35%,rgba(232,163,168,.35),transparent 55%),radial-gradient(ellipse at 15% 85%,rgba(46,90,64,.55),transparent 55%),linear-gradient(165deg,#5E0F14 0%,#22070A 55%,#132a1d 100%)"></div>
-<div class="absolute -right-10 bottom-0 font-serif italic text-[38vw] leading-none text-creme/[.04] select-none">Paris</div>
-<div class="absolute top-[22%] left-[8%] w-2 h-2 rounded-full bg-amber-100 glow"></div><div class="absolute top-[18%] left-[28%] w-2 h-2 rounded-full bg-amber-100 glow"></div><div class="absolute top-[21%] left-[48%] w-2 h-2 rounded-full bg-amber-100 glow"></div><div class="absolute top-[17%] left-[68%] w-2 h-2 rounded-full bg-amber-100 glow"></div><div class="absolute top-[22%] left-[88%] w-2 h-2 rounded-full bg-amber-100 glow"></div>
-<svg class="absolute top-[14%] inset-x-0 w-full h-24 text-amber-100/30" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 2 Q12 9 25 4 T50 4 T75 3 T100 5" stroke="currentColor" stroke-width=".15" fill="none"/></svg>
-<div class="absolute right-[6%] bottom-[10%] hidden md:block">
-<div class="w-40 h-40 rounded-full bg-rose/30 blur-2xl"></div>
-</div>
-</div>
-<div class="awning absolute top-0 inset-x-0 opacity-90" aria-hidden="true"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-nuit/40 via-transparent to-nuit/70" aria-hidden="true"></div>
-<div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-36 pb-28 w-full">
-<p class="hero-in text-xs sm:text-sm tracking-[.35em] uppercase text-rose mb-6">Face au Marché Saint‑Germain · Paris 6e</p>
-<h1 id="htitle" class="font-serif font-light text-[2.6rem] leading-[1.02] sm:text-6xl lg:text-8xl max-w-5xl">L'authentique brasserie de <em class="text-rose">Saint‑Germain,</em> du matin au soir.</h1>
-<p class="hero-in mt-8 max-w-xl text-base sm:text-lg text-creme/80 leading-relaxed">Une cuisine maison à base de produits frais, les grands classiques de bistrot et une terrasse côté marché — servis en continu, tous les jours de 9h à 23h30.</p>
-<div class="hero-in mt-10 flex flex-wrap gap-4">
-<a href="#reservation" class="mag px-8 py-4 rounded-full bg-rouge text-creme font-semibold shadow-xl shadow-rouge/30 hover:bg-rose hover:text-nuit transition">Réserver une table</a>
-<a href="#carte" class="mag px-8 py-4 rounded-full border border-creme/40 hover:bg-creme hover:text-nuit transition">Découvrir la carte</a>
-</div>
-<div class="hero-in mt-12 inline-flex items-center gap-3 rounded-full bg-creme/10 backdrop-blur px-5 py-2.5 text-sm">
-<span class="text-rose">★★★★★</span><span><strong>4,4/5</strong> sur Google · 1 587 avis</span>
-</div>
-</div>
-<a href="#apropos" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[10px] tracking-[.3em] uppercase text-creme/70" aria-label="Défiler vers la suite">
-<span class="w-6 h-10 rounded-full border border-creme/50 flex justify-center pt-2"><span class="scrolldot w-1 h-2 rounded-full bg-rose"></span></span>Défiler
-</a>
+<main id="top">
+<section class="relative min-h-[100svh] overflow-hidden bg-sapin text-creme grain flex flex-col">
+  <div class="absolute inset-0 kb" aria-hidden="true">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,#3a5a3f_0%,#1E3D2E_35%,#14291F_70%)]"></div>
+    <div class="absolute -right-32 top-24 w-[560px] h-[560px] rounded-full bg-[radial-gradient(circle,#f3c58a55,transparent_65%)]"></div>
+    <svg class="absolute right-[6%] bottom-[8%] w-[46vw] max-w-[620px] text-rose/20" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width=".6"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="44"/><path d="M100 4v192M4 100h192M32 32l136 136M168 32L32 168"/></svg>
+    <svg class="absolute left-[-40px] bottom-[-30px] w-72 text-sauge/25" viewBox="0 0 100 100" fill="currentColor"><path d="M50 95C20 70 10 45 30 20c10 20 25 25 20 75zM52 95c5-40 20-55 40-60-5 30-20 50-40 60z"/></svg>
+  </div>
+  <div class="relative z-10"><div class="awning"></div><div class="scallop"></div></div>
+  <div class="relative z-10 flex-1 max-w-7xl w-full mx-auto px-5 sm:px-8 flex flex-col justify-center py-16">
+    <p class="hero-sub text-xs sm:text-sm tracking-[.35em] uppercase text-rose mb-6">Brasserie bistrot · Saint‑Germain‑des‑Prés</p>
+    <h1 class="font-display font-light leading-[.95] text-[13vw] sm:text-7xl lg:text-8xl xl:text-9xl max-w-5xl">
+      <span class="inline-block overflow-hidden align-bottom"><span class="hw inline-block">Le</span></span>
+      <span class="inline-block overflow-hidden align-bottom"><span class="hw inline-block">bistrot</span></span>
+      <span class="inline-block overflow-hidden align-bottom"><span class="hw inline-block">du</span></span>
+      <span class="inline-block overflow-hidden align-bottom"><span class="hw inline-block">Marché</span></span>
+      <span class="inline-block overflow-hidden align-bottom pb-2"><span class="hw inline-block italic text-rose">Saint‑Germain</span></span>
+    </h1>
+    <p class="hero-sub mt-8 max-w-xl text-base sm:text-lg text-creme/80 leading-relaxed">Cuisine française moderne de bistrot, produits de saison et grande terrasse ensoleillée, juste en face du marché. Service continu, tous les jours de 9h à 23h.</p>
+    <div class="hero-sub mt-10 flex flex-wrap gap-4">
+      <a href="#reservation" class="magnetic group inline-flex items-center gap-3 bg-rouge hover:bg-bordeaux text-creme font-semibold px-7 py-4 rounded-full transition">Réserver une table <svg class="group-hover:translate-x-1 transition" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#carte" class="magnetic inline-flex items-center gap-3 border border-creme/40 hover:bg-creme hover:text-sapin px-7 py-4 rounded-full transition">Découvrir l'expérience</a>
+    </div>
+  </div>
+  <div class="absolute right-6 sm:right-12 bottom-24 sm:bottom-16 z-10 w-28 h-28 sm:w-36 sm:h-36" aria-hidden="true">
+    <svg class="spin w-full h-full text-creme/70" viewBox="0 0 100 100"><defs><path id="c" d="M50 50m-38 0a38 38 0 1176 0a38 38 0 11-76 0"/></defs><text font-size="8.4" letter-spacing="2.6" fill="currentColor"><textPath href="#c">SERVICE CONTINU · 9H — 23H · 7J/7 · </textPath></text></svg>
+    <div class="absolute inset-0 flex items-center justify-center font-display italic text-3xl text-rose">PP</div>
+  </div>
+  <a href="#maison" class="absolute left-1/2 -translate-x-1/2 bottom-6 z-10 flex flex-col items-center gap-2 text-[10px] tracking-[.3em] uppercase text-creme/70" aria-label="Défiler vers la suite">
+    <span class="w-6 h-10 rounded-full border border-creme/40 flex justify-center pt-2"><span class="scrolldot w-1 h-2 rounded-full bg-rose"></span></span>Découvrir
+  </a>
 </section>
 
-<section id="apropos" class="relative py-24 sm:py-32">
-<div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16 items-center">
-<div data-r>
-<p class="text-xs tracking-[.35em] uppercase text-rouge mb-5"><span class="font-serif italic text-base mr-2">01</span>— La maison</p>
-<h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">Une brasserie parisienne, <em class="text-rouge">simplement.</em></h2>
-<p class="mt-8 text-lg leading-relaxed text-nuit/80">Niché dans le 6e arrondissement, juste en face du Marché Saint‑Germain, Le Paris Paris vous ouvre ses portes sous son auvent rouge et ses roses. Ici, on cultive l'art de la brasserie : une cuisine maison, des produits frais, et ce plaisir très parisien de s'attabler à toute heure.</p>
-<p class="mt-5 leading-relaxed text-nuit/70">Un café en terrasse le matin, la formule Ardoise du midi, un verre au bar à l'heure de l'happy hour ou un dîner en tête‑à‑tête : notre service continu accompagne chaque moment de votre journée, en famille, entre amis ou en amoureux.</p>
-<div class="mt-10 grid grid-cols-3 gap-6 border-t border-nuit/15 pt-8">
-<div><p class="font-serif text-3xl text-rouge">7j/7</p><p class="text-sm text-nuit/60 mt-1">Ouvert tous les jours</p></div>
-<div><p class="font-serif text-3xl text-rouge">9h</p><p class="text-sm text-nuit/60 mt-1">Premier café</p></div>
-<div><p class="font-serif text-3xl text-rouge">23h30</p><p class="text-sm text-nuit/60 mt-1">Dernier service</p></div>
+<div class="bg-rouge text-creme overflow-hidden py-4" aria-hidden="true">
+  <div class="marquee flex whitespace-nowrap font-display italic text-2xl gap-10 w-max">
+    <span>Produits de saison ✦ Terrasse ensoleillée ✦ Cocktails classiques & créations ✦ Face au Marché Saint‑Germain ✦ Service continu 9h–23h ✦&nbsp;</span>
+    <span>Produits de saison ✦ Terrasse ensoleillée ✦ Cocktails classiques & créations ✦ Face au Marché Saint‑Germain ✦ Service continu 9h–23h ✦&nbsp;</span>
+  </div>
 </div>
-</div>
-<div class="relative h-[480px] sm:h-[560px]" data-r>
-<div data-p="-8" class="absolute left-0 top-0 w-[78%] h-[85%] rounded-[2rem] overflow-hidden bg-vert grain shadow-2xl" role="img" aria-label="Illustration de la façade du Paris Paris avec son auvent rouge et ses roses">
-<div class="absolute inset-0" style="background:radial-gradient(circle at 30% 20%,rgba(232,163,168,.3),transparent 60%)"></div>
-<div class="art-facade absolute inset-0 flex items-end justify-center p-6"></div>
-</div>
-<div data-p="10" class="absolute right-0 bottom-0 w-[52%] h-[46%] rounded-[2rem] bg-rose p-6 sm:p-8 flex flex-col justify-between shadow-2xl">
-<svg class="w-10 h-10 text-bordeaux" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-<div><p class="font-serif text-2xl sm:text-4xl text-bordeaux leading-none">9h — 23h30</p><p class="mt-2 text-sm text-bordeaux/80">Service continu, sans interruption.</p></div>
-</div>
-</div>
-</div>
+
+<section id="maison" class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+    <div class="relative h-[460px] sm:h-[560px]" data-reveal>
+      <div class="absolute left-0 top-0 w-[78%] h-[85%] rounded-t-[200px] rounded-b-2xl overflow-hidden bg-gradient-to-b from-foret to-sapin grain">
+        <div data-parallax class="absolute inset-0 flex items-end justify-center">
+          <svg viewBox="0 0 300 360" class="w-full h-full" fill="none">
+            <rect x="40" y="70" width="220" height="40" fill="#B3262D"/><path d="M40 110q13.75 18 27.5 0t27.5 0 27.5 0 27.5 0 27.5 0 27.5 0 27.5 0 27.5 0" fill="#B3262D"/>
+            <g fill="#F6EFE4"><rect x="67.5" y="70" width="27.5" height="40"/><rect x="122.5" y="70" width="27.5" height="40"/><rect x="177.5" y="70" width="27.5" height="40"/><rect x="232.5" y="70" width="27.5" height="40"/></g>
+            <rect x="55" y="140" width="190" height="130" stroke="#EDBDB6" stroke-width="1.5"/><path d="M150 140v130M55 205h190" stroke="#EDBDB6" stroke-width=".8"/>
+            <circle cx="102" cy="172" r="14" fill="#f3c58a" opacity=".5"/><circle cx="198" cy="236" r="10" fill="#f3c58a" opacity=".4"/>
+            <g stroke="#7E9C86" stroke-width="1.4"><path d="M70 300c0-20 10-30 20-30s20 10 20 30M190 300c0-20 10-30 20-30s20 10 20 30"/><path d="M80 300v40M100 300v40M200 300v40M220 300v40M60 300h60M180 300h60"/></g>
+            <circle cx="150" cy="310" r="22" stroke="#F6EFE4" stroke-width="1.4"/><path d="M150 332v28" stroke="#F6EFE4" stroke-width="1.4"/>
+            <g fill="#EDBDB6"><circle cx="48" cy="285" r="6"/><circle cx="60" cy="276" r="5"/><circle cx="252" cy="285" r="6"/><circle cx="240" cy="276" r="5"/></g>
+          </svg>
+        </div>
+        <span class="absolute top-8 left-1/2 -translate-x-1/2 text-[10px] tracking-[.35em] uppercase text-rose">8 rue de Montfaucon</span>
+      </div>
+      <div class="absolute right-0 bottom-0 w-[52%] h-[46%] rounded-2xl bg-rose p-6 sm:p-8 flex flex-col justify-between shadow-2xl shadow-bordeaux/20">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7E161D" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><div class="font-display text-4xl sm:text-5xl text-bordeaux">9h<span class="italic font-light">—</span>23h</div><p class="text-sm text-bordeaux/80 mt-2">Service continu, tous les jours</p></div>
+      </div>
+    </div>
+    <div>
+      <p class="text-xs tracking-[.35em] uppercase text-rouge mb-6" data-reveal>01 — La maison</p>
+      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05]" data-reveal>Une brasserie parisienne, <em class="font-light text-rouge">comme on les aime.</em></h2>
+      <div class="mt-8 space-y-5 text-encre/75 text-lg leading-relaxed" data-reveal>
+        <p>Niché dans le 6ᵉ arrondissement, en face du Marché Saint‑Germain, Le Paris Paris cultive l'esprit bistrot dans ce qu'il a de plus sincère : une atmosphère cosy et authentique, un accueil convivial et une table généreuse.</p>
+        <p>En cuisine, le chef <strong class="text-encre font-semibold">Alexandre Linsolas</strong> orchestre une carte française moderne de bistrot, guidée par les saisons et par des produits choisis — si possible bio et labellisés.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-3 gap-4 border-t border-encre/10 pt-8" data-stagger>
+        <div><div class="font-display text-3xl text-rouge">7j/7</div><p class="text-xs uppercase tracking-widest text-encre/60 mt-1">Ouvert</p></div>
+        <div><div class="font-display text-3xl text-rouge">14h</div><p class="text-xs uppercase tracking-widest text-encre/60 mt-1">De service continu</p></div>
+        <div><div class="font-display text-3xl text-rouge">≈ 30 €</div><p class="text-xs uppercase tracking-widest text-encre/60 mt-1">Prix moyen*</p></div>
+      </div>
+      <p class="text-xs text-encre/50 mt-4">*Prix moyen indicatif communiqué par TheFork.</p>
+    </div>
+  </div>
 </section>
 
-<section id="carte" class="relative py-24 sm:py-32 bg-bordeaux text-creme grain overflow-hidden">
-<div class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-rouge/40 blur-3xl" aria-hidden="true"></div>
-<div class="relative max-w-7xl mx-auto px-5 sm:px-8">
-<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16" data-r>
-<div>
-<p class="text-xs tracking-[.35em] uppercase text-rose mb-5"><span class="font-serif italic text-base mr-2">02</span>— La carte</p>
-<h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight max-w-2xl">Les classiques de brasserie, <em class="text-rose">faits maison.</em></h2>
-</div>
-<p class="max-w-md text-creme/75 leading-relaxed">Entrées, salades, plats traditionnels et desserts : une carte généreuse qui met le produit frais au cœur de l'assiette, avec des options végétariennes.</p>
-</div>
-<div id="cards" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-rs></div>
-<p class="mt-10 text-xs text-creme/50">Tarifs indicatifs, susceptibles d'évoluer. Carte complète et prix à la carte disponibles sur place.</p>
-</div>
+<section id="carte" class="py-24 sm:py-32 bg-sapin text-creme relative grain overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+      <div>
+        <p class="text-xs tracking-[.35em] uppercase text-rose mb-6" data-reveal>02 — L'expérience</p>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] max-w-2xl" data-reveal>Du café du matin <em class="font-light text-rose">au dernier cocktail.</em></h2>
+      </div>
+      <p class="max-w-md text-creme/70 leading-relaxed" data-reveal>La carte évolue au rythme des saisons et du marché voisin. Pour connaître les suggestions du moment, appelez-nous ou suivez-nous sur Instagram.</p>
+    </div>
+    <div id="cards" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-stagger></div>
+  </div>
 </section>
 
-<section class="relative py-20 sm:py-28 overflow-hidden bg-vert text-creme" aria-label="Bandeau d'ambiance">
-<div data-p="-20" class="absolute inset-0 opacity-30" style="background:repeating-linear-gradient(90deg,#9E1B22 0 60px,transparent 60px 120px)" aria-hidden="true"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-vert via-vert/70 to-vert" aria-hidden="true"></div>
-<div class="relative whitespace-nowrap">
-<div class="marquee inline-block font-serif italic text-5xl sm:text-7xl lg:text-8xl">Du matin au soir <span class="text-rose not-italic">✦</span> Face au marché <span class="text-rose not-italic">✦</span> Cuisine maison <span class="text-rose not-italic">✦</span> Terrasse & bar <span class="text-rose not-italic">✦</span> Du matin au soir <span class="text-rose not-italic">✦</span> Face au marché <span class="text-rose not-italic">✦</span> Cuisine maison <span class="text-rose not-italic">✦</span> Terrasse & bar <span class="text-rose not-italic">✦</span>&nbsp;</div>
-</div>
+<section class="relative h-[70vh] min-h-[420px] overflow-hidden bg-bordeaux text-creme flex items-center grain" aria-label="La terrasse">
+  <div data-parallax class="absolute inset-[-15%] bg-[repeating-linear-gradient(115deg,#7E161D_0_80px,#8e1c24_80px_160px)]" aria-hidden="true"></div>
+  <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle,#f3c58a40,transparent_60%)]" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 text-center">
+    <svg class="mx-auto mb-8 text-rose" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+    <p class="font-display text-4xl sm:text-6xl lg:text-7xl font-light leading-tight" data-reveal>Une grande terrasse au soleil,<br><em class="text-rose">en plein cœur du Marché Saint‑Germain.</em></p>
+  </div>
 </section>
 
 <section id="galerie" class="py-24 sm:py-32">
-<div class="max-w-7xl mx-auto px-5 sm:px-8">
-<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14" data-r>
-<div>
-<p class="text-xs tracking-[.35em] uppercase text-rouge mb-5"><span class="font-serif italic text-base mr-2">03</span>— L'ambiance</p>
-<h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">Un petit coin de <em class="text-rouge">Paris</em> éternel.</h2>
-</div>
-<p class="max-w-md text-nuit/70 leading-relaxed">Auvent rouge, roses en façade, banquettes de brasserie et terrasse animée par le marché : l'atmosphère cosy et authentique de Saint‑Germain.</p>
-</div>
-<div id="gal" class="grid grid-cols-2 md:grid-cols-4 auto-rows-[170px] sm:auto-rows-[220px] gap-4" data-rs></div>
-</div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
+      <div>
+        <p class="text-xs tracking-[.35em] uppercase text-rouge mb-6" data-reveal>03 — Ambiances</p>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05]" data-reveal>L'art de vivre <em class="font-light text-rouge">à la parisienne.</em></h2>
+      </div>
+      <a href="https://www.instagram.com/leparisparis6" target="_blank" rel="noopener" class="magnetic inline-flex items-center gap-2 text-sm font-semibold text-rouge border-b border-rouge pb-1 self-start sm:self-auto" data-reveal>@leparisparis6 sur Instagram →</a>
+    </div>
+    <div id="gallery" class="grid grid-cols-2 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[240px] gap-4" data-stagger></div>
+  </div>
 </section>
 
-<section class="py-20 bg-sable/60 border-y border-nuit/10" aria-label="Avis et points forts">
-<div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-5 grid grid-cols-2 gap-6" data-rs>
-<div class="rounded-3xl bg-creme p-7 shadow-sm"><p class="font-serif text-5xl sm:text-6xl text-rouge"><span data-c="4.4" data-d="1">4,4</span><span class="text-2xl text-nuit/40">/5</span></p><p class="mt-2 text-rose text-lg" aria-hidden="true">★★★★★</p><p class="text-sm text-nuit/70">Note Google</p></div>
-<div class="rounded-3xl bg-rouge text-creme p-7 shadow-sm"><p class="font-serif text-5xl sm:text-6xl"><span data-c="1587" data-d="0">1 587</span></p><p class="mt-2 text-rose text-lg" aria-hidden="true">✦</p><p class="text-sm text-creme/80">avis clients sur Google</p></div>
-</div>
-<ul class="lg:col-span-7 grid sm:grid-cols-2 gap-x-10 gap-y-6" data-rs>
-<li class="flex gap-4"><span class="mt-1 w-8 h-8 shrink-0 rounded-full bg-vert text-creme flex items-center justify-center text-sm">✓</span><div><p class="font-semibold">Face au Marché Saint‑Germain</p><p class="text-sm text-nuit/65">Un emplacement idéal au cœur du 6e.</p></div></li>
-<li class="flex gap-4"><span class="mt-1 w-8 h-8 shrink-0 rounded-full bg-vert text-creme flex items-center justify-center text-sm">✓</span><div><p class="font-semibold">Service continu 7j/7</p><p class="text-sm text-nuit/65">De 9h à 23h30, sans interruption.</p></div></li>
-<li class="flex gap-4"><span class="mt-1 w-8 h-8 shrink-0 rounded-full bg-vert text-creme flex items-center justify-center text-sm">✓</span><div><p class="font-semibold">Cuisine maison & produits frais</p><p class="text-sm text-nuit/65">Magret, entrecôte Angus, tartares…</p></div></li>
-<li class="flex gap-4"><span class="mt-1 w-8 h-8 shrink-0 rounded-full bg-vert text-creme flex items-center justify-center text-sm">✓</span><div><p class="font-semibold">Terrasse, bar & carte des vins</p><p class="text-sm text-nuit/65">Pour prolonger le moment.</p></div></li>
-</ul>
-</div>
+<section id="avis" class="py-24 sm:py-28 bg-lin">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5" data-reveal>
+      <p class="text-xs tracking-[.35em] uppercase text-rouge mb-6">04 — Ils nous font confiance</p>
+      <div class="flex items-baseline gap-3"><span class="counter font-display text-8xl sm:text-9xl text-bordeaux" data-to="4.4" data-dec="1">4,4</span><span class="font-display text-3xl text-encre/50">/5</span></div>
+      <div class="flex gap-1 mt-3 text-rouge" aria-label="Note Google 4,4 sur 5">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg width="22" height="22" viewBox="0 0 24 24"><defs><linearGradient id="h"><stop offset="40%" stop-color="currentColor"/><stop offset="40%" stop-color="#d9c9b2"/></linearGradient></defs><path fill="url(#h)" d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg>
+      </div>
+      <p class="mt-5 text-lg text-encre/70">Note moyenne sur Google, d'après <strong class="counter text-encre" data-to="1587" data-dec="0">1587</strong> avis clients.</p>
+      <a href="https://maps.google.com/?cid=12119939776788085708&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener" class="magnetic inline-flex mt-8 bg-encre text-creme px-6 py-3 rounded-full text-sm font-semibold hover:bg-bordeaux transition">Lire les avis sur Google</a>
+    </div>
+    <ul class="lg:col-span-7 grid sm:grid-cols-2 gap-4" data-stagger>
+      <li class="bg-creme rounded-2xl p-7 hover:-translate-y-1 transition"><span class="font-display italic text-rouge text-2xl">i.</span><h3 class="font-display text-xl mt-2">Face au Marché Saint‑Germain</h3><p class="text-sm text-encre/65 mt-2">Une adresse au cœur de Saint‑Germain‑des‑Prés.</p></li>
+      <li class="bg-creme rounded-2xl p-7 hover:-translate-y-1 transition"><span class="font-display italic text-rouge text-2xl">ii.</span><h3 class="font-display text-xl mt-2">Une cuisine de saison</h3><p class="text-sm text-encre/65 mt-2">Signée par le chef Alexandre Linsolas.</p></li>
+      <li class="bg-creme rounded-2xl p-7 hover:-translate-y-1 transition"><span class="font-display italic text-rouge text-2xl">iii.</span><h3 class="font-display text-xl mt-2">Grande terrasse ensoleillée</h3><p class="text-sm text-encre/65 mt-2">Pour un déjeuner au soleil ou un verre en fin de journée.</p></li>
+      <li class="bg-creme rounded-2xl p-7 hover:-translate-y-1 transition"><span class="font-display italic text-rouge text-2xl">iv.</span><h3 class="font-display text-xl mt-2">Service continu</h3><p class="text-sm text-encre/65 mt-2">De 9h à 23h, tous les jours de la semaine.</p></li>
+    </ul>
+  </div>
 </section>
 
 <section id="infos" class="py-24 sm:py-32">
-<div class="max-w-7xl mx-auto px-5 sm:px-8">
-<div data-r class="mb-14">
-<p class="text-xs tracking-[.35em] uppercase text-rouge mb-5"><span class="font-serif italic text-base mr-2">04</span>— Accès & horaires</p>
-<h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">Rendez‑vous <em class="text-rouge">rue de Montfaucon.</em></h2>
-</div>
-<div class="grid lg:grid-cols-5 gap-8">
-<div class="lg:col-span-2 space-y-4" data-rs>
-<a href="https://maps.google.com/?cid=12119939776788085708" target="_blank" rel="noopener" class="group flex gap-5 rounded-3xl bg-white/60 border border-nuit/10 p-6 hover:border-rouge transition"><svg class="w-6 h-6 text-rouge shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 1 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><p class="text-xs uppercase tracking-widest text-nuit/50">Adresse</p><p class="mt-1 font-semibold group-hover:text-rouge transition">8 Rue de Montfaucon<br>75006 Paris</p><p class="text-sm text-nuit/60 mt-1">Face au Marché Saint‑Germain · entrée de plain‑pied</p></div></a>
-<a href="tel:+33143265056" class="group flex gap-5 rounded-3xl bg-white/60 border border-nuit/10 p-6 hover:border-rouge transition"><svg class="w-6 h-6 text-rouge shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><div><p class="text-xs uppercase tracking-widest text-nuit/50">Téléphone</p><p class="mt-1 font-semibold group-hover:text-rouge transition">01 43 26 50 56</p></div></a>
-<a href="mailto:leparisparis6@gmail.com" class="group flex gap-5 rounded-3xl bg-white/60 border border-nuit/10 p-6 hover:border-rouge transition"><svg class="w-6 h-6 text-rouge shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><p class="text-xs uppercase tracking-widest text-nuit/50">E‑mail</p><p class="mt-1 font-semibold group-hover:text-rouge transition break-all">leparisparis6@gmail.com</p></div></a>
-<div class="flex gap-5 rounded-3xl bg-vert text-creme p-6"><svg class="w-6 h-6 text-rose shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div class="w-full"><p class="text-xs uppercase tracking-widest text-creme/60">Horaires</p><p class="mt-1 font-semibold">Tous les jours · 9h – 23h30</p><p class="text-sm text-creme/70 mt-1">Service continu · Formule Ardoise le midi du lundi au samedi · Happy hour 16h – 20h</p></div></div>
-<div class="flex gap-3 pt-2">
-<a href="https://www.instagram.com/leparisparis6" target="_blank" rel="noopener" class="mag w-12 h-12 rounded-full bg-rouge text-creme flex items-center justify-center hover:bg-rose hover:text-nuit transition" aria-label="Instagram du Paris Paris"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
-<a href="https://www.facebook.com/LeParisParis6" target="_blank" rel="noopener" class="mag w-12 h-12 rounded-full bg-rouge text-creme flex items-center justify-center hover:bg-rose hover:text-nuit transition" aria-label="Facebook du Paris Paris"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
-</div>
-</div>
-<div class="lg:col-span-3 rounded-[2rem] overflow-hidden min-h-[380px] shadow-xl border border-nuit/10" data-r>
-<iframe title="Plan d'accès au Paris Paris, 8 Rue de Montfaucon, 75006 Paris" src="https://www.google.com/maps?q=8%20Rue%20de%20Montfaucon%2C%2075006%20Paris&output=embed" class="w-full h-full min-h-[380px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20">
+    <div>
+      <p class="text-xs tracking-[.35em] uppercase text-rouge mb-6" data-reveal>05 — Infos pratiques</p>
+      <h2 class="font-display text-4xl sm:text-5xl leading-[1.05]" data-reveal>Nous trouver, <em class="font-light text-rouge">nous joindre.</em></h2>
+      <dl class="mt-12 divide-y divide-encre/10 border-y border-encre/10" data-stagger>
+        <div class="py-5 grid grid-cols-3 gap-4"><dt class="text-xs uppercase tracking-widest text-encre/55 pt-1">Adresse</dt><dd class="col-span-2 text-lg">8 Rue de Montfaucon<br>75006 Paris</dd></div>
+        <div class="py-5 grid grid-cols-3 gap-4"><dt class="text-xs uppercase tracking-widest text-encre/55 pt-1">Téléphone</dt><dd class="col-span-2 text-lg"><a href="tel:+33143265056" class="hover:text-rouge underline-offset-4 hover:underline">01 43 26 50 56</a></dd></div>
+        <div class="py-5 grid grid-cols-3 gap-4"><dt class="text-xs uppercase tracking-widest text-encre/55 pt-1">E‑mail</dt><dd class="col-span-2 text-lg break-all"><a href="mailto:leparisparis6@gmail.com" class="hover:text-rouge underline-offset-4 hover:underline">leparisparis6@gmail.com</a></dd></div>
+        <div class="py-5 grid grid-cols-3 gap-4"><dt class="text-xs uppercase tracking-widest text-encre/55 pt-1">Horaires</dt><dd class="col-span-2 text-lg">Tous les jours, de 9h à 23h<br><span class="text-sm text-encre/60">Service continu</span></dd></div>
+        <div class="py-5 grid grid-cols-3 gap-4"><dt class="text-xs uppercase tracking-widest text-encre/55 pt-1">Accès</dt><dd class="col-span-2 text-lg">Entrée de plain‑pied<br><span class="text-sm text-encre/60">Fiche accessibilité disponible sur AccesLibre</span></dd></div>
+      </dl>
+      <div class="flex gap-3 mt-8" data-reveal>
+        <a href="https://www.instagram.com/leparisparis6" target="_blank" rel="noopener" aria-label="Instagram" class="magnetic w-12 h-12 rounded-full border border-encre/20 flex items-center justify-center hover:bg-rouge hover:text-creme hover:border-rouge transition"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/LeParisParis6" target="_blank" rel="noopener" aria-label="Facebook" class="magnetic w-12 h-12 rounded-full border border-encre/20 flex items-center justify-center hover:bg-rouge hover:text-creme hover:border-rouge transition"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+        <a href="https://maps.google.com/?cid=12119939776788085708&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener" class="magnetic px-5 h-12 rounded-full border border-encre/20 flex items-center text-sm font-semibold hover:bg-encre hover:text-creme transition">Itinéraire</a>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[380px] lg:min-h-full bg-lin shadow-xl shadow-encre/10" data-reveal>
+      <iframe title="Plan d'accès — Le Paris Paris, 8 Rue de Montfaucon, 75006 Paris" src="https://www.google.com/maps?q=8%20Rue%20de%20Montfaucon%2C%2075006%20Paris&output=embed" class="w-full h-full min-h-[380px] grayscale-[40%]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
 </section>
 
-<section id="reservation" class="relative py-24 sm:py-32 bg-nuit text-creme overflow-hidden grain">
-<div class="absolute inset-0" style="background:radial-gradient(ellipse at 85% 10%,rgba(158,27,34,.6),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(31,61,43,.8),transparent 60%)" aria-hidden="true"></div>
-<div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16">
-<div data-r>
-<p class="text-xs tracking-[.35em] uppercase text-rose mb-5"><span class="font-serif italic text-base mr-2">05</span>— Réservation</p>
-<h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">Votre table <em class="text-rose">vous attend.</em></h2>
-<p class="mt-8 text-creme/75 text-lg leading-relaxed max-w-md">Déjeuner, dîner ou simple verre en terrasse : indiquez‑nous vos envies, nous revenons vers vous pour confirmer. Pour une réponse immédiate, appelez‑nous.</p>
-<div class="mt-10 flex flex-col sm:flex-row gap-4">
-<a href="tel:+33143265056" class="mag inline-flex justify-center px-7 py-4 rounded-full bg-rose text-nuit font-semibold hover:bg-creme transition">Appeler · 01 43 26 50 56</a>
-<a href="https://www.thefork.fr/restaurant/le-paris-paris-r709885" target="_blank" rel="noopener" class="mag inline-flex justify-center px-7 py-4 rounded-full border border-creme/40 hover:bg-creme hover:text-nuit transition">Réserver sur TheFork</a>
-</div>
-</div>
-<form id="form" class="rounded-[2rem] bg-creme/[.06] backdrop-blur border border-creme/15 p-6 sm:p-10 grid sm:grid-cols-2 gap-5" data-r novalidate>
-<label class="sm:col-span-2 text-sm">Nom<input required name="nom" class="mt-2 w-full bg-transparent border-b border-creme/30 py-3 focus:border-rose outline-none" placeholder="Votre nom"></label>
-<label class="text-sm">Téléphone<input required type="tel" name="tel" class="mt-2 w-full bg-transparent border-b border-creme/30 py-3 focus:border-rose outline-none" placeholder="06 00 00 00 00"></label>
-<label class="text-sm">E‑mail<input type="email" name="email" class="mt-2 w-full bg-transparent border-b border-creme/30 py-3 focus:border-rose outline-none" placeholder="vous@exemple.fr"></label>
-<label class="text-sm">Date<input required type="date" name="date" class="mt-2 w-full bg-transparent border-b border-creme/30 py-3 focus:border-rose outline-none [color-scheme:dark]"></label>
-<label class="text-sm">Heure<input required type="time" name="heure" min="09:00" max="23:30" class="mt-2 w-full bg-transparent border-b border-creme/30 py-3 focus:border-rose outline-none [color-scheme:dark]"></label>
-<label class="text-sm">Couverts<select name="couverts" class="mt-2 w-full bg-nuit border-b border-creme/30 py-3 focus:border-rose outline-none"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></label>
-<label class="text-sm">Placement<select name="place" class="mt-2 w-full bg-nuit border-b border-creme/30 py-3 focus:border-rose outline-none"><option>Indifférent</option><option>Salle</option><option>Terrasse</option></select></label>
-<label class="sm:col-span-2 text-sm">Message<textarea name="msg" rows="3" class="mt-2 w-full bg-transparent border-b border-creme/30 py-3 focus:border-rose outline-none resize-none" placeholder="Anniversaire, menu enfant, demande particulière…"></textarea></label>
-<button class="mag sm:col-span-2 mt-2 px-8 py-4 rounded-full bg-rouge text-creme font-semibold hover:bg-rose hover:text-nuit transition">Envoyer ma demande</button>
-<p id="ok" class="sm:col-span-2 text-rose text-sm" role="status" aria-live="polite"></p>
-</form>
-</div>
+<section id="reservation" class="relative py-24 sm:py-32 bg-bordeaux text-creme overflow-hidden grain">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,#B3262D,transparent_55%),radial-gradient(ellipse_at_90%_90%,#14291F,transparent_55%)]" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-start">
+    <div>
+      <p class="text-xs tracking-[.35em] uppercase text-rose mb-6" data-reveal>06 — Réservation</p>
+      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05]" data-reveal>Votre table <em class="font-light text-rose">vous attend.</em></h2>
+      <p class="mt-6 text-creme/80 text-lg leading-relaxed max-w-md" data-reveal>Déjeuner en terrasse, dîner entre amis ou cocktail en fin de journée : laissez-nous votre demande, ou réservez directement par téléphone ou via TheFork.</p>
+      <div class="mt-10 flex flex-wrap gap-4" data-reveal>
+        <a href="tel:+33143265056" class="magnetic inline-flex items-center gap-3 bg-creme text-bordeaux font-semibold px-6 py-3.5 rounded-full hover:bg-rose transition"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>01 43 26 50 56</a>
+        <a href="https://www.thefork.fr/restaurant/le-paris-paris-r709885" target="_blank" rel="noopener" class="magnetic inline-flex items-center border border-creme/40 px-6 py-3.5 rounded-full hover:bg-creme hover:text-bordeaux transition">Réserver sur TheFork</a>
+      </div>
+    </div>
+    <form id="resa" class="bg-creme text-encre rounded-3xl p-6 sm:p-10 shadow-2xl grid sm:grid-cols-2 gap-5" data-reveal novalidate>
+      <label class="sm:col-span-2 text-xs uppercase tracking-widest text-encre/60">Nom<input required name="nom" autocomplete="name" class="mt-2 w-full bg-transparent border-b border-encre/25 py-2 text-base normal-case tracking-normal text-encre focus:border-rouge outline-none" placeholder="Votre nom"></label>
+      <label class="text-xs uppercase tracking-widest text-encre/60">Téléphone<input required name="tel" type="tel" autocomplete="tel" class="mt-2 w-full bg-transparent border-b border-encre/25 py-2 text-base normal-case tracking-normal text-encre focus:border-rouge outline-none" placeholder="06 …"></label>
+      <label class="text-xs uppercase tracking-widest text-encre/60">Couverts<select name="couverts" class="mt-2 w-full bg-transparent border-b border-encre/25 py-2 text-base normal-case tracking-normal text-encre focus:border-rouge outline-none"><option>2 personnes</option><option>1 personne</option><option>3 personnes</option><option>4 personnes</option><option>5 personnes</option><option>6 personnes et +</option></select></label>
+      <label class="text-xs uppercase tracking-widest text-encre/60">Date<input required name="date" type="date" class="mt-2 w-full bg-transparent border-b border-encre/25 py-2 text-base text-encre focus:border-rouge outline-none"></label>
+      <label class="text-xs uppercase tracking-widest text-encre/60">Heure<input required name="heure" type="time" min="09:00" max="23:00" class="mt-2 w-full bg-transparent border-b border-encre/25 py-2 text-base text-encre focus:border-rouge outline-none"></label>
+      <label class="sm:col-span-2 text-xs uppercase tracking-widest text-encre/60">Message<textarea name="msg" rows="3" class="mt-2 w-full bg-transparent border-b border-encre/25 py-2 text-base normal-case tracking-normal text-encre focus:border-rouge outline-none resize-none" placeholder="Terrasse, occasion particulière…"></textarea></label>
+      <button class="magnetic sm:col-span-2 mt-2 bg-rouge hover:bg-bordeaux text-creme font-semibold py-4 rounded-full transition">Envoyer ma demande</button>
+      <p id="resaMsg" class="sm:col-span-2 text-sm text-center text-encre/60" role="status" aria-live="polite">Votre demande sera confirmée par l'équipe.</p>
+    </form>
+  </div>
 </section>
 </main>
 
-<footer class="bg-bordeaux text-creme pt-20 pb-10">
-<div class="max-w-7xl mx-auto px-5 sm:px-8">
-<div class="grid md:grid-cols-3 gap-12 pb-14 border-b border-creme/15">
-<div><p class="font-serif italic text-4xl">Le Paris Paris</p><p class="mt-4 text-creme/70 max-w-xs">L'authentique brasserie de Saint‑Germain, du matin au soir.</p></div>
-<div class="text-sm space-y-2 text-creme/80"><p class="text-xs uppercase tracking-widest text-rose mb-3">Nous trouver</p><p>8 Rue de Montfaucon, 75006 Paris</p><p><a href="tel:+33143265056" class="hover:text-rose">01 43 26 50 56</a></p><p><a href="mailto:leparisparis6@gmail.com" class="hover:text-rose">leparisparis6@gmail.com</a></p><p>Tous les jours · 9h – 23h30</p></div>
-<div class="text-sm space-y-2 text-creme/80"><p class="text-xs uppercase tracking-widest text-rose mb-3">Navigation</p><p><a href="#apropos" class="hover:text-rose">La maison</a></p><p><a href="#carte" class="hover:text-rose">La carte</a></p><p><a href="#galerie" class="hover:text-rose">Ambiance</a></p><p><a href="#reservation" class="hover:text-rose">Réserver</a></p><p class="flex gap-4 pt-2"><a href="https://www.instagram.com/leparisparis6" target="_blank" rel="noopener" class="hover:text-rose">Instagram</a><a href="https://www.facebook.com/LeParisParis6" target="_blank" rel="noopener" class="hover:text-rose">Facebook</a></p></div>
-</div>
-<div class="pt-8 flex flex-col sm:flex-row justify-between gap-4 text-xs text-creme/50"><p>© <span id="yr"></span> Le Paris Paris · Brasserie, Paris 6e</p><p>L'abus d'alcool est dangereux pour la santé, à consommer avec modération. · Site conçu par Elaria</p></div>
-</div>
+<footer class="bg-sapin text-creme/80 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="font-display italic text-creme text-[16vw] lg:text-[12rem] leading-none tracking-tight">Le Paris Paris</div>
+    <div class="mt-12 grid sm:grid-cols-3 gap-10 border-t border-creme/15 pt-10 text-sm">
+      <div><p class="text-rose uppercase tracking-widest text-xs mb-3">Adresse</p><p>8 Rue de Montfaucon<br>75006 Paris</p></div>
+      <div><p class="text-rose uppercase tracking-widest text-xs mb-3">Contact</p><p><a href="tel:+33143265056" class="hover:text-rose">01 43 26 50 56</a><br><a href="mailto:leparisparis6@gmail.com" class="hover:text-rose">leparisparis6@gmail.com</a></p></div>
+      <div><p class="text-rose uppercase tracking-widest text-xs mb-3">Horaires</p><p>Tous les jours<br>9h — 23h, service continu</p></div>
+    </div>
+    <div class="mt-12 flex flex-col sm:flex-row justify-between gap-4 text-xs text-creme/50">
+      <p>© <span id="yr"></span> Le Paris Paris — Brasserie, Paris 6ᵉ</p>
+      <p><a href="https://www.instagram.com/leparisparis6" target="_blank" rel="noopener" class="hover:text-rose">Instagram</a> · <a href="https://www.facebook.com/LeParisParis6" target="_blank" rel="noopener" class="hover:text-rose">Facebook</a> · <a href="#top" class="hover:text-rose">Haut de page ↑</a></p>
+    </div>
+  </div>
 </footer>
 
-<div id="lb" class="fixed inset-0 z-[70] bg-nuit/90 backdrop-blur hidden items-center justify-center p-5" role="dialog" aria-modal="true" aria-label="Agrandissement">
-<button id="lbx" class="absolute top-5 right-5 w-12 h-12 rounded-full bg-creme/10 text-creme text-2xl" aria-label="Fermer">×</button>
-<figure class="w-full max-w-3xl"><div id="lbc" class="aspect-[4/3] rounded-3xl overflow-hidden"></div><figcaption id="lbt" class="mt-4 text-center font-serif italic text-2xl text-creme"></figcaption></figure>
+<div id="lb" class="fixed inset-0 z-[70] bg-encre/90 backdrop-blur-sm hidden items-center justify-center p-5" role="dialog" aria-modal="true" aria-label="Agrandissement">
+  <button id="lbClose" class="absolute top-5 right-5 w-12 h-12 rounded-full bg-creme text-encre text-2xl" aria-label="Fermer">×</button>
+  <figure class="max-w-3xl w-full"><div id="lbArt" class="aspect-[4/3] rounded-2xl overflow-hidden"></div><figcaption id="lbCap" class="text-creme font-display text-2xl mt-4 text-center"></figcaption></figure>
 </div>
 
-<button id="cbtn" class="ring fixed bottom-5 right-5 z-[80] w-16 h-16 rounded-full bg-rouge text-creme shadow-2xl shadow-rouge/40 flex items-center justify-center hover:scale-105 transition" aria-label="Ouvrir l'assistant virtuel" aria-expanded="false" aria-controls="chat">
-<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke-linecap="round" stroke-width="2.6"/></svg>
+<button id="chatBtn" class="ring fixed bottom-5 right-5 z-[80] w-16 h-16 rounded-full bg-rouge text-creme shadow-2xl flex items-center justify-center hover:scale-105 transition" aria-label="Ouvrir l'assistant virtuel" aria-expanded="false">
+  <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg>
 </button>
-<div id="chat" class="fixed z-[90] inset-0 sm:inset-auto sm:bottom-24 sm:right-5 sm:w-[380px] sm:h-[580px] bg-creme sm:rounded-3xl shadow-2xl flex-col overflow-hidden hidden" role="dialog" aria-label="Assistant virtuel du Paris Paris">
-<div class="bg-bordeaux text-creme px-5 py-4 flex items-center gap-3">
-<div class="w-11 h-11 rounded-full bg-rouge flex items-center justify-center font-serif italic text-lg">P</div>
-<div class="flex-1"><p class="font-serif text-lg leading-none">Le Paris Paris</p><p class="text-xs text-creme/70 mt-1 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-green-400"></span>Assistant virtuel · en ligne</p></div>
-<button id="cx" class="w-10 h-10 rounded-full hover:bg-creme/10 text-2xl" aria-label="Fermer l'assistant">×</button>
-</div>
-<div id="cmsg" class="flex-1 overflow-y-auto p-4 space-y-3 text-sm" aria-live="polite"></div>
-<div id="cq" class="px-4 pb-2 flex flex-wrap gap-2"></div>
-<form id="cform" class="p-3 border-t border-nuit/10 flex gap-2"><label for="cin" class="sr-only">Votre question</label><input id="cin" class="flex-1 rounded-full bg-white border border-nuit/15 px-4 py-2.5 text-sm outline-none focus:border-rouge" placeholder="Posez votre question…" autocomplete="off"><button class="w-11 h-11 rounded-full bg-rouge text-creme flex items-center justify-center" aria-label="Envoyer"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
-<p class="text-center text-[10px] text-nuit/40 pb-2">Assistant propulsé par Elaria</p>
+<div id="chat" class="fixed z-[90] inset-0 sm:inset-auto sm:bottom-24 sm:right-5 sm:w-[380px] sm:h-[580px] sm:rounded-3xl bg-creme shadow-2xl hidden flex-col overflow-hidden" role="dialog" aria-label="Assistant virtuel Le Paris Paris">
+  <div class="bg-sapin text-creme px-5 py-4 flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full bg-rouge flex items-center justify-center font-display italic">PP</div>
+    <div class="flex-1"><p class="font-display text-lg leading-none">Le Paris Paris</p><p class="text-xs text-creme/70 mt-1 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-green-400"></span>Assistant virtuel · en ligne</p></div>
+    <button id="chatClose" class="w-9 h-9 rounded-full hover:bg-creme/10 text-xl" aria-label="Fermer l'assistant">×</button>
+  </div>
+  <div id="msgs" class="flex-1 overflow-y-auto p-4 space-y-3 text-sm" aria-live="polite"></div>
+  <div id="quick" class="px-4 pb-2 flex flex-wrap gap-2"></div>
+  <form id="chatForm" class="border-t border-encre/10 p-3 flex gap-2">
+    <input id="chatIn" class="flex-1 bg-lin/60 rounded-full px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-rouge" placeholder="Posez votre question…" aria-label="Votre message">
+    <button class="w-10 h-10 rounded-full bg-rouge text-creme flex items-center justify-center" aria-label="Envoyer"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-6z"/></svg></button>
+  </form>
+  <p class="text-[10px] text-center text-encre/45 pb-2">Assistant propulsé par Elaria</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
-const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,G=window.gsap&&!RM;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 $('#yr').textContent=new Date().getFullYear();
-setTimeout(()=>$('#loader')&&$('#loader').remove(),1250);
-const S='stroke="#F7F0E6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"';
-const ART={
-facade:`<rect x="45" y="70" width="110" height="125" ${S}/><path d="M35 70h130l-12 28H47z" fill="#9E1B22"/><g fill="#F7F0E6">${[0,1,2,3,4,5].map(i=>`<circle cx="${55+i*18}" cy="99" r="5"/>`).join('')}</g><text x="100" y="89" text-anchor="middle" font-family="Fraunces" font-size="10" fill="#F7F0E6" letter-spacing="1.5">LE PARIS PARIS</text><rect x="85" y="125" width="30" height="70" ${S}/><rect x="55" y="125" width="22" height="34" ${S}/><rect x="123" y="125" width="22" height="34" ${S}/><g fill="#E8A3A8">${[48,58,68,132,142,152].map((x,i)=>`<circle cx="${x}" cy="${168+(i%2)*6}" r="5"/>`).join('')}</g><path d="M45 180c10-6 20-6 32 0M123 180c10-6 20-6 32 0" stroke="#7fb08e" stroke-width="2" fill="none"/>`,
-terrasse:`<circle cx="150" cy="45" r="16" ${S}/><ellipse cx="100" cy="120" rx="40" ry="8" ${S}/><path d="M100 128v50M85 180h30M45 105v75M45 140h25v40M45 105c0-8 5-12 10-12M155 105v75M155 140h-25v40M155 105c0-8-5-12-10-12"${S}/><path d="M92 112v-14h16v14" ${S}/>`,
-bar:`<path d="M20 160h160M30 160v35M170 160v35" ${S}/><path d="M55 160v-60l8-12V60h10v28l8 12v60M100 160v-50l6-10V75h8v25l6 10v50M140 160v-70l7-10V55h10v25l7 10v70" ${S}/><path d="M20 40h160" stroke="#E8A3A8" stroke-width="2"/>`,
-assiette:`<circle cx="100" cy="105" r="62" ${S}/><circle cx="100" cy="105" r="44" ${S}/><path d="M78 100c8-18 38-20 48-4 6 12-6 24-24 22-14-1-28-6-24-18z" fill="#9E1B22"/><path d="M84 112l6-8M96 114l8-10M110 112l6-8" stroke="#F7F0E6" stroke-width="1.5"/><path d="M22 60v90M16 60v22a6 6 0 0 0 12 0V60M178 60c-8 10-8 30 0 36v54" ${S}/>`,
-vin:`<path d="M75 40h50c2 30-4 55-25 60-21-5-27-30-25-60zM100 100v60M78 165h44" ${S}/><path d="M78 70h44c-2 16-10 26-22 28-12-2-20-12-22-28z" fill="#9E1B22"/><circle cx="150" cy="60" r="4" fill="#E8A3A8"/><circle cx="160" cy="80" r="2.5" fill="#E8A3A8"/>`,
-cafe:`<path d="M55 100h80v35a30 30 0 0 1-30 30H85a30 30 0 0 1-30-30zM135 110h10a14 14 0 0 1 0 28h-8M40 172h120" ${S}/><path d="M80 85c-6-10 6-14 0-26M100 85c-6-10 6-14 0-26M120 85c-6-10 6-14 0-26" stroke="#E8A3A8" stroke-width="2" fill="none" stroke-linecap="round"/>`};
-const art=(k,c='w-full h-full')=>`<svg class="${c}" viewBox="0 0 200 200" aria-hidden="true">${ART[k]}</svg>`;
-$('.art-facade').innerHTML=art('facade','w-[85%] h-[90%]');
-const IC={slate:'<rect x="3" y="4" width="18" height="13" rx="1"/><path d="M7 21l2-4M17 21l-2-4M7 9h6M7 12h9"/>',plate:'<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="4"/><path d="M2 4v16M22 4c-2 3-2 7 0 8v8"/>',glass:'<path d="M6 3h12l-6 9zM12 12v8M8 21h8"/>',kid:'<circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/>',chair:'<path d="M6 3v18M6 12h10v9M6 3c4 0 6 2 6 5"/><circle cx="18" cy="5" r="2"/>',wine:'<path d="M8 3h8c0 6-1 9-4 10-3-1-4-4-4-10zM12 13v7M8 21h8"/>'};
-const CARDS=[
-{t:'Formule Ardoise',s:'Le midi, du lundi au samedi',i:'slate',l:[['Plat du jour','14,50 €'],['Entrée + Plat ou Plat + Dessert','17,90 €'],['Entrée + Plat + Dessert','22,40 €']]},
-{t:'La carte brasserie',s:'Service continu, 9h – 23h30',i:'plate',d:'Entrées, salades, plats traditionnels et desserts maison. Nos signatures : magret de canard, entrecôte Angus, tartares. Plats végétariens disponibles.'},
-{t:'Happy Hour',s:'De 16h à 20h',i:'glass',l:[['Pintes','6 €'],['Cocktails classiques','7 €'],['Mocktails','7 €']]},
-{t:'Menu enfant',s:'Plat, accompagnement, dessert & boisson',i:'kid',l:[['Menu complet','9,90 €']],d:'Pour que les plus jeunes profitent eux aussi d\'un vrai repas de brasserie.'},
-{t:'Terrasse & bar',s:'Côté Marché Saint‑Germain',i:'chair',d:'Installez‑vous en terrasse face au marché ou prolongez le repas au bar, du café du matin au dernier verre.'},
-{t:'Carte des vins',s:'L\'accord parfait',i:'wine',d:'Une sélection de vins pour accompagner les classiques de brasserie. Notre équipe vous conseille volontiers.'}];
-$('#cards').innerHTML=CARDS.map((c,n)=>`<article class="group relative rounded-3xl bg-creme/[.06] border border-creme/15 p-7 sm:p-8 hover:bg-creme hover:text-nuit hover:-translate-y-2 transition duration-500 flex flex-col">
-<div class="flex items-start justify-between"><span class="w-14 h-14 rounded-2xl bg-rouge flex items-center justify-center text-creme group-hover:bg-bordeaux transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[c.i]}</svg></span><span class="font-serif italic text-creme/30 group-hover:text-rouge/40 text-3xl">0${n+1}</span></div>
-<h3 class="font-serif text-2xl sm:text-3xl mt-6">${c.t}</h3><p class="text-xs uppercase tracking-widest text-rose group-hover:text-rouge mt-2">${c.s}</p>
-${c.d?`<p class="mt-4 text-sm leading-relaxed text-creme/75 group-hover:text-nuit/75">${c.d}</p>`:''}
-${c.l?`<ul class="mt-5 space-y-3">${c.l.map(([a,b])=>`<li class="flex items-baseline gap-2 text-sm"><span>${a}</span><span class="flex-1 border-b border-dotted border-current opacity-30"></span><span class="font-serif text-lg text-rose group-hover:text-rouge">${b}</span></li>`).join('')}</ul>`:''}
-</article>`).join('');
-const GAL=[
-{k:'facade',t:'La façade, son auvent rouge et ses roses',b:'linear-gradient(150deg,#1F3D2B,#2E5A40)',c:'col-span-2 row-span-2'},
-{k:'terrasse',t:'La terrasse côté marché',b:'linear-gradient(150deg,#E8A3A8,#c97b82)',c:''},
-{k:'cafe',t:'Le premier café dès 9h',b:'linear-gradient(150deg,#5E0F14,#9E1B22)',c:'row-span-2'},
-{k:'assiette',t:'Les classiques de brasserie',b:'linear-gradient(150deg,#22070A,#5E0F14)',c:''},
-{k:'vin',t:'Un verre de vin au comptoir',b:'linear-gradient(150deg,#9E1B22,#5E0F14)',c:'col-span-2 md:col-span-1'},
-{k:'bar',t:'Le bar, pour prolonger le moment',b:'linear-gradient(150deg,#2E5A40,#1F3D2B)',c:'col-span-2 md:col-span-2'}];
-$('#gal').innerHTML=GAL.map((g,i)=>`<button class="tile group relative rounded-3xl overflow-hidden text-left ${g.c}" style="background:${g.b}" data-i="${i}" aria-label="Agrandir : ${g.t}"><span class="absolute inset-0 flex items-center justify-center p-6">${art(g.k,'w-full h-full max-w-[260px]')}</span><span class="absolute inset-0 bg-gradient-to-t from-nuit/80 via-transparent to-transparent"></span><span class="absolute bottom-0 inset-x-0 p-5 text-creme font-serif italic text-base sm:text-xl translate-y-1 group-hover:translate-y-0 transition">${g.t}</span><span class="absolute top-4 right-4 w-9 h-9 rounded-full bg-creme/20 backdrop-blur text-creme flex items-center justify-center scale-75 group-hover:scale-100 transition">+</span></button>`).join('');
-const lb=$('#lb'),lbOpen=i=>{const g=GAL[i];$('#lbc').style.background=g.b;$('#lbc').innerHTML=`<div class="w-full h-full flex items-center justify-center p-10">${art(g.k,'w-full h-full max-w-md')}</div>`;$('#lbt').textContent=g.t;lb.classList.remove('hidden');lb.classList.add('flex');$('#lbx').focus();G&&gsap.from('#lbc',{scale:.92,duration:.5,ease:'power3.out'})},lbClose=()=>{lb.classList.add('hidden');lb.classList.remove('flex')};
-$$('.tile').forEach(t=>t.onclick=()=>lbOpen(t.dataset.i));$('#lbx').onclick=lbClose;lb.onclick=e=>{if(e.target===lb)lbClose()};
-addEventListener('keydown',e=>{if(e.key==='Escape'){lbClose();closeChat()}});
-const hdr=$('#hdr'),onS=()=>hdr.classList.toggle('bg-nuit/80',scrollY>40)||1;
-addEventListener('scroll',()=>{const s=scrollY>40;hdr.classList.toggle('bg-nuit/80',s);hdr.classList.toggle('backdrop-blur-lg',s);hdr.classList.toggle('shadow-lg',s)},{passive:true});
-const mn=$('#mnav'),bg=$('#burger');let mo=false;
-const tm=o=>{mo=o;mn.classList.toggle('translate-x-full',!o);bg.setAttribute('aria-expanded',o);bg.querySelector('.b1').style.transform=o?'translateY(4px) rotate(45deg)':'';bg.querySelector('.b2').style.transform=o?'translateY(-4px) rotate(-45deg)':'';document.body.style.overflow=o?'hidden':'';if(o&&G)gsap.from('.ml',{x:40,opacity:0,stagger:.07,duration:.5,delay:.15})};
-bg.onclick=()=>tm(!mo);$$('.ml').forEach(a=>a.onclick=()=>tm(false));
-$('#form').onsubmit=e=>{e.preventDefault();const f=e.target;if(!f.nom.value||!f.tel.value||!f.date.value||!f.heure.value){$('#ok').textContent='Merci de renseigner votre nom, téléphone, date et heure.';return}$('#ok').textContent=`Merci ${f.nom.value} ! Votre demande pour ${f.couverts.value} couvert(s) a bien été envoyée. Nous vous recontactons rapidement pour confirmer.`;f.reset()};
-if(G){
-gsap.registerPlugin(ScrollTrigger);
-const h=$('#htitle');h.innerHTML=h.innerHTML.split(/(<em[^>]*>.*?<\/em>|\s+)/).filter(w=>w&&w.trim()).map(w=>w.startsWith('<em')?w.replace(/<em([^>]*)>(.*?)<\/em>/,(m,a,t)=>t.split(' ').map(x=>`<span class="inline-block overflow-hidden align-bottom pb-1"><em${a} class="w inline-block text-rose">${x}</em></span>`).join(' ')):`<span class="inline-block overflow-hidden align-bottom pb-1"><span class="w inline-block">${w}</span></span>`).join(' ');
-const tl=gsap.timeline({delay:.85});tl.from('.w',{yPercent:110,duration:.9,stagger:.06,ease:'power4.out'}).from('.hero-in',{y:24,opacity:0,stagger:.12,duration:.8,ease:'power3.out'},'-=.6').from('.awning',{yPercent:-100,duration:1,ease:'power3.out'},0);
-$$('[data-r]').forEach(el=>gsap.from(el,{y:50,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',once:true}}));
-$$('[data-rs]').forEach(el=>gsap.from(el.children,{y:40,opacity:0,duration:.8,stagger:.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}}));
-$$('[data-p]').forEach(el=>gsap.to(el,{yPercent:+el.dataset.p,ease:'none',scrollTrigger:{trigger:el.parentElement,start:'top bottom',end:'bottom top',scrub:true}}));
-$$('[data-c]').forEach(el=>{const v=+el.dataset.c,d=+el.dataset.d,o={n:0};gsap.to(o,{n:v,duration:2,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 90%',once:true},onUpdate:()=>el.textContent=o.n.toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d})})});
-if(matchMedia('(pointer:fine)').matches)$$('.mag').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.35,duration:.4})});b.addEventListener('mouseleave',()=>gsap.to(b,{x:0,y:0,duration:.6,ease:'elastic.out(1,.4)'}))});
+const ic=p=>`<svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">${p}</svg>`;
+const services=[
+ {t:'Cuisine de bistrot',d:'Une cuisine française moderne, orchestrée par le chef Alexandre Linsolas, autour de produits de saison — si possible bio et labellisés.',k:'La table',i:'<circle cx="12" cy="12" r="6"/><path d="M3 4v6a2 2 0 002 2v8M5 4v4M21 4c-2 1-2 5 0 7v9"/>'},
+ {t:'Service continu',d:'Petit‑déjeuner, déjeuner, pause de l\'après‑midi ou dîner : nous vous accueillons tous les jours, de 9h à 23h sans interruption.',k:'9h — 23h',i:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'},
+ {t:'Grande terrasse',d:'Une terrasse ensoleillée en plein cœur du Marché Saint‑Germain, idéale pour profiter du quartier.',k:'Au soleil',i:'<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/>'},
+ {t:'Cocktails',d:'Une carte qui fait dialoguer les grands classiques et des créations originales, pour l\'apéritif comme pour la soirée.',k:'Le bar',i:'<path d="M4 4h16l-8 9zM12 13v7M8 20h8M15 4l3-2"/>'},
+ {t:'Réservation',d:'Réservez votre table par téléphone au 01 43 26 50 56 ou en ligne via TheFork (LaFourchette).',k:'Simple & rapide',i:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>'},
+ {t:'Accessibilité',d:'Une entrée de plain‑pied et une fiche d\'accessibilité détaillée disponible sur AccesLibre.',k:'Pour tous',i:'<circle cx="12" cy="4.5" r="1.5"/><path d="M6 8h12M12 8v6l-3 7M12 14l3 7"/>'}
+];
+$('#cards').innerHTML=services.map((s,n)=>`<article class="group relative rounded-3xl border border-creme/10 bg-foret/60 p-8 hover:bg-rouge transition-colors duration-500 hover:-translate-y-1 transform-gpu"><div class="flex justify-between items-start text-rose group-hover:text-creme transition">${ic(s.i)}<span class="font-display italic text-sm">0${n+1}</span></div><p class="mt-10 text-[11px] uppercase tracking-[.3em] text-sauge group-hover:text-rose transition">${s.k}</p><h3 class="font-display text-2xl mt-2">${s.t}</h3><p class="mt-3 text-creme/70 group-hover:text-creme/90 leading-relaxed text-[15px]">${s.d}</p></article>`).join('');
+const art={
+ terrasse:['from-[#f3c58a] to-rouge','<circle cx="150" cy="80" r="40" fill="#F6EFE4" opacity=".5"/><rect x="40" y="130" width="220" height="24" fill="#7E161D"/><path d="M40 154q13.75 14 27.5 0t27.5 0 27.5 0 27.5 0 27.5 0 27.5 0 27.5 0 27.5 0" fill="#7E161D"/><path d="M90 200h40M110 200v40M170 200h40M190 200v40" stroke="#14291F" stroke-width="3"/>'],
+ cocktail:['from-rose to-bordeaux','<path d="M100 70h100l-50 70z" fill="#F6EFE4" opacity=".85"/><path d="M150 140v80M115 220h70" stroke="#F6EFE4" stroke-width="4"/><circle cx="185" cy="78" r="14" fill="#B3262D"/><path d="M170 60l30-30" stroke="#14291F" stroke-width="3"/>'],
+ assiette:['from-lin to-[#c9b89c]','<circle cx="150" cy="150" r="80" fill="#F6EFE4"/><circle cx="150" cy="150" r="55" fill="none" stroke="#7E9C86" stroke-width="2"/><circle cx="140" cy="140" r="16" fill="#B3262D"/><circle cx="165" cy="160" r="10" fill="#7E9C86"/><path d="M50 90v120M250 90v120" stroke="#14291F" stroke-width="4"/>'],
+ marche:['from-sauge to-foret','<g fill="#F6EFE4" opacity=".9"><rect x="60" y="170" width="180" height="60" rx="4"/></g><circle cx="95" cy="160" r="20" fill="#B3262D"/><circle cx="140" cy="155" r="22" fill="#EDBDB6"/><circle cx="185" cy="160" r="20" fill="#f3c58a"/><path d="M220 150q10-30 30-30-5 25-30 30z" fill="#F6EFE4"/>'],
+ matin:['from-[#f6d9a8] to-[#d98b5f]','<rect x="105" y="130" width="80" height="70" rx="10" fill="#F6EFE4"/><path d="M185 145h15a15 15 0 010 30h-15" fill="none" stroke="#F6EFE4" stroke-width="6"/><path d="M125 115q10-15 0-30M150 115q10-15 0-30" stroke="#F6EFE4" stroke-width="4" fill="none"/><ellipse cx="145" cy="210" rx="70" ry="8" fill="#7E161D" opacity=".4"/>'],
+ roses:['from-rose to-[#d48c86]','<g fill="#B3262D"><circle cx="120" cy="120" r="26"/><circle cx="180" cy="150" r="22"/><circle cx="135" cy="185" r="18"/></g><g fill="none" stroke="#F6EFE4" stroke-width="2"><path d="M110 120a10 10 0 1020 0M172 150a8 8 0 1016 0"/></g><g fill="#1E3D2E"><path d="M90 150q20-10 30 10-20 10-30-10zM190 190q20-10 30 10-20 10-30-10z"/></g>']
+};
+const gal=[['terrasse','La terrasse face au marché','col-span-2 row-span-2'],['cocktail','Cocktails classiques & créations',''],['assiette','Une cuisine de saison','row-span-2'],['marche','Le Marché Saint‑Germain',''],['matin','Dès 9h, le café du matin','col-span-2 lg:col-span-1'],['roses','Un décor fleuri et chaleureux','col-span-2 lg:col-span-1']];
+const svgArt=k=>`<div class="absolute inset-0 bg-gradient-to-br ${art[k][0]}"></div><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" class="absolute inset-0 w-full h-full" aria-hidden="true">${art[k][1]}</svg>`;
+$('#gallery').innerHTML=gal.map((g,n)=>`<button class="tile group relative overflow-hidden rounded-2xl ${g[2]} text-left grain" data-i="${n}" aria-label="Agrandir : ${g[1]}">${svgArt(g[0])}<span class="absolute inset-x-0 bottom-0 p-4 sm:p-5 bg-gradient-to-t from-encre/70 to-transparent text-creme font-display text-lg sm:text-xl translate-y-2 group-hover:translate-y-0 transition">${g[1]}</span></button>`).join('');
+const lb=$('#lb');let lastF;
+const closeLb=()=>{lb.classList.add('hidden');lb.classList.remove('flex');lastF&&lastF.focus()};
+$$('.tile').forEach(t=>t.onclick=()=>{const g=gal[t.dataset.i];lastF=t;$('#lbArt').innerHTML=`<div class="relative w-full h-full">${svgArt(g[0])}</div>`;$('#lbCap').textContent=g[1];lb.classList.remove('hidden');lb.classList.add('flex');$('#lbClose').focus()});
+$('#lbClose').onclick=closeLb;lb.onclick=e=>{if(e.target===lb)closeLb()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLb();toggleChat(false);toggleMenu(false)}});
+
+const header=$('#header');
+const onScroll=()=>{const s=scrollY>40;header.classList.toggle('bg-sapin/80',s);header.classList.toggle('backdrop-blur-lg',s);header.classList.toggle('shadow-lg',s)};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const mm=$('#mmenu'),bg=$('#burger');
+function toggleMenu(o){o=o??mm.classList.contains('translate-x-full');mm.classList.toggle('translate-x-full',!o);mm.setAttribute('aria-hidden',!o);bg.setAttribute('aria-expanded',o);$('.b1').style.transform=o?'translateY(3.5px) rotate(45deg)':'';$('.b2').style.transform=o?'translateY(-3.5px) rotate(-45deg)':'';document.body.style.overflow=o?'hidden':'';if(o&&window.gsap&&!rm)gsap.from('.ml',{x:40,opacity:0,stagger:.06,duration:.5,delay:.15})}
+bg.onclick=()=>toggleMenu();$$('.ml').forEach(a=>a.onclick=()=>toggleMenu(false));
+
+$('#resa').onsubmit=e=>{e.preventDefault();const f=e.target,m=$('#resaMsg');if(!f.checkValidity()){m.textContent='Merci de renseigner votre nom, téléphone, date et heure.';m.className='sm:col-span-2 text-sm text-center text-rouge';return}m.innerHTML=`Merci ${f.nom.value.split(' ')[0]} ! Votre demande a bien été enregistrée. Pour une confirmation immédiate : <a class="underline" href="tel:+33143265056">01 43 26 50 56</a>.`;m.className='sm:col-span-2 text-sm text-center text-foret font-semibold';f.reset()};
+
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const loader=$('#loader');
+if(!window.gsap||rm){loader.remove()}else{
+ gsap.registerPlugin(ScrollTrigger);
+ const tl=gsap.timeline();
+ tl.from('#loadbar',{scaleX:0,duration:.6,ease:'power2.inOut'}).to(loader,{yPercent:-100,duration:.55,ease:'power3.inOut',onComplete:()=>loader.remove()})
+   .from('.hw',{yPercent:110,duration:.9,stagger:.09,ease:'power4.out'},'-=.2').from('.hero-sub',{y:24,opacity:0,stagger:.12,duration:.8},'-=.6');
+ $$('[data-reveal]').forEach(el=>gsap.from(el,{y:40,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',once:true}}));
+ $$('[data-stagger]').forEach(el=>gsap.from(el.children,{y:40,opacity:0,duration:.8,stagger:.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}}));
+ $$('[data-parallax]').forEach(el=>gsap.fromTo(el,{yPercent:-6},{yPercent:6,ease:'none',scrollTrigger:{trigger:el.parentElement,scrub:true}}));
+ $$('.counter').forEach(el=>{const to=+el.dataset.to,d=+el.dataset.dec,o={v:0};gsap.to(o,{v:to,duration:2,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 90%',once:true},onUpdate:()=>el.textContent=o.v.toFixed(d).replace('.',',')})});
+ if(matchMedia('(pointer:fine)').matches)$$('.magnetic').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.3,duration:.4})});b.addEventListener('mouseleave',()=>gsap.to(b,{x:0,y:0,duration:.6,ease:'elastic.out(1,.4)'}))});
 }
-const TEL='<a href="tel:+33143265056" class="underline font-semibold text-rouge">01 43 26 50 56</a>';
+
+const T='<a class="underline font-semibold text-rouge" href="tel:+33143265056">01 43 26 50 56</a>';
 const A={
-carte:'Notre carte de brasserie met à l\'honneur une cuisine maison à base de produits frais : entrées, salades, plats traditionnels et desserts. Nos signatures : magret de canard, entrecôte Angus, tartares — et des plats végétariens. 🍽️ <a href="#carte" class="underline text-rouge">Voir la carte</a>',
-horaires:'Nous sommes ouverts <strong>tous les jours, en service continu de 9h à 23h30</strong>. Formule Ardoise le midi du lundi au samedi, happy hour de 16h à 20h.',
-resa:`Avec plaisir ! Vous pouvez réserver via notre <a href="#reservation" class="underline text-rouge">formulaire</a>, par téléphone au ${TEL} ou en ligne sur <a href="https://www.thefork.fr/restaurant/le-paris-paris-r709885" target="_blank" rel="noopener" class="underline text-rouge">TheFork</a>.`,
-adresse:'Nous vous attendons au <strong>8 Rue de Montfaucon, 75006 Paris</strong>, juste en face du Marché Saint‑Germain. Entrée de plain‑pied. <a href="https://maps.google.com/?cid=12119939776788085708" target="_blank" rel="noopener" class="underline text-rouge">Ouvrir l\'itinéraire</a>',
-prix:'Quelques repères (tarifs indicatifs) :<br>• Formule Ardoise (midi) : plat du jour 14,50 € · entrée+plat ou plat+dessert 17,90 € · entrée+plat+dessert 22,40 €<br>• Happy hour 16h–20h : pintes 6 €, cocktails & mocktails 7 €<br>• Menu enfant : 9,90 €<br>Pour les prix à la carte, appelez‑nous au '+TEL+'.',
-tel:`Vous pouvez nous joindre au ${TEL} ou par e‑mail à <a href="mailto:leparisparis6@gmail.com" class="underline text-rouge">leparisparis6@gmail.com</a>.`,
-def:`Je n'ai pas cette information sous la main 🙂 Le plus simple est d'appeler l'équipe au ${TEL}, elle se fera un plaisir de vous répondre.`};
-const Q=[['La carte','carte'],['Horaires','horaires'],['Réserver une table','resa'],['Adresse & accès','adresse'],['Formules & tarifs','prix']];
-const KW=[[/horaire|heure|ouvert|ferm|quand/i,'horaires'],[/prix|tarif|combien|formule|menu|happy|enfant|€/i,'prix'],[/r[ée]serv|rdv|rendez|table|place/i,'resa'],[/adresse|o[uù] |acc[eè]s|venir|m[ée]tro|plan|situ/i,'adresse'],[/t[ée]l|appel|joindre|mail|contact/i,'tel'],[/carte|plat|manger|cuisine|v[ée]g|viande|tartare|magret|entrec|dessert|vin|terrasse|bar/i,'carte']];
-const cm=$('#cmsg'),chat=$('#chat'),cb=$('#cbtn');
-const add=(h,me)=>{const d=document.createElement('div');d.className=`max-w-[85%] px-4 py-3 rounded-2xl leading-relaxed ${me?'ml-auto bg-rouge text-creme rounded-br-sm':'bg-white text-nuit rounded-bl-sm shadow-sm'}`;d.innerHTML=h;cm.appendChild(d);cm.scrollTop=cm.scrollHeight;G&&gsap.from(d,{y:10,opacity:0,duration:.35})};
-const reply=k=>{const t=document.createElement('div');t.className='bg-white rounded-2xl px-4 py-3 w-fit flex gap-1 shadow-sm';t.setAttribute('aria-label','en train d\'écrire…');t.innerHTML='<span class="dot w-2 h-2 rounded-full bg-rouge/60"></span><span class="dot w-2 h-2 rounded-full bg-rouge/60"></span><span class="dot w-2 h-2 rounded-full bg-rouge/60"></span>';cm.appendChild(t);cm.scrollTop=cm.scrollHeight;setTimeout(()=>{t.remove();add(A[k])},800)};
-$('#cq').innerHTML=Q.map(([l,k])=>`<button data-k="${k}" class="px-3 py-1.5 rounded-full border border-rouge/40 text-rouge text-xs hover:bg-rouge hover:text-creme transition">${l}</button>`).join('');
-$$('#cq button').forEach(b=>b.onclick=()=>{add(b.textContent,1);reply(b.dataset.k)});
-$('#cform').onsubmit=e=>{e.preventDefault();const v=$('#cin').value.trim();if(!v)return;add(v.replace(/</g,'&lt;'),1);$('#cin').value='';const m=KW.find(([r])=>r.test(v));reply(m?m[1]:'def')};
-let started=false;
-function openChat(){chat.classList.remove('hidden');chat.classList.add('flex');cb.setAttribute('aria-expanded','true');G&&gsap.from(chat,{y:30,scale:.96,opacity:0,duration:.45,ease:'power3.out'});if(!started){started=true;setTimeout(()=>add('Bonjour et bienvenue au <strong>Paris Paris</strong> ! 🌹 Je suis l\'assistant virtuel de la brasserie. Comment puis‑je vous aider ?'),250)}setTimeout(()=>$('#cin').focus(),300)}
-function closeChat(){chat.classList.add('hidden');chat.classList.remove('flex');cb.setAttribute('aria-expanded','false')}
-cb.onclick=()=>chat.classList.contains('hidden')?openChat():closeChat();$('#cx').onclick=closeChat;
+ carte:`Notre cuisine française moderne de bistrot est signée par le chef Alexandre Linsolas, autour de produits de saison (si possible bio et labellisés). Côté bar : grands classiques et créations originales. La carte évolue avec les saisons — pour le détail du jour, appelez-nous au ${T}.`,
+ horaires:'Nous vous accueillons <strong>tous les jours, de 9h à 23h</strong>, en service continu. ☀️',
+ resa:`Vous pouvez réserver par téléphone au ${T}, en ligne via <a class="underline text-rouge" target="_blank" rel="noopener" href="https://www.thefork.fr/restaurant/le-paris-paris-r709885">TheFork</a>, ou avec le <a class="underline text-rouge" href="#reservation">formulaire de réservation</a>.`,
+ adresse:'Nous sommes au <strong>8 Rue de Montfaucon, 75006 Paris</strong>, en face du Marché Saint‑Germain. Entrée de plain‑pied. <a class="underline text-rouge" target="_blank" rel="noopener" href="https://maps.google.com/?cid=12119939776788085708&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA">Voir l\'itinéraire</a>',
+ prix:`Le prix moyen indicatif est d'environ <strong>30 €</strong> (source TheFork). Pour toute précision sur la carte, appelez-nous au ${T}.`,
+ tel:`Vous pouvez nous joindre au ${T} ou par e‑mail : <a class="underline text-rouge" href="mailto:leparisparis6@gmail.com">leparisparis6@gmail.com</a>.`,
+ terrasse:'Oui ! Nous disposons d\'une grande terrasse ensoleillée, en plein cœur du Marché Saint‑Germain. 🌿',
+ def:`Je n'ai pas la réponse précise à cette question. Le plus simple est d'appeler l'équipe au ${T} — elle se fera un plaisir de vous renseigner.`
+};
+const Q=[['La carte','carte'],['Horaires','horaires'],['Réserver une table','resa'],['Adresse & accès','adresse'],['Prix moyen','prix']];
+const msgs=$('#msgs'),chat=$('#chat'),cb=$('#chatBtn');let started=false;
+const bubble=(h,me)=>{const d=document.createElement('div');d.className=me?'ml-auto max-w-[80%] bg-rouge text-creme rounded-2xl rounded-br-sm px-4 py-2.5':'max-w-[85%] bg-white text-encre rounded-2xl rounded-bl-sm px-4 py-2.5 shadow-sm leading-relaxed';d.innerHTML=h;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;window.gsap&&!rm&&gsap.from(d,{y:10,opacity:0,duration:.3});return d};
+const bot=h=>{const t=bubble('<span class="inline-flex gap-1 items-center" aria-label="En train d\'écrire"><span class="dot w-1.5 h-1.5 rounded-full bg-encre/40"></span><span class="dot w-1.5 h-1.5 rounded-full bg-encre/40"></span><span class="dot w-1.5 h-1.5 rounded-full bg-encre/40"></span></span><span class="sr-only">en train d\'écrire…</span>');setTimeout(()=>{t.remove();bubble(h)},850)};
+$('#quick').innerHTML=Q.map(q=>`<button class="text-xs border border-rouge/40 text-bordeaux rounded-full px-3 py-1.5 hover:bg-rouge hover:text-creme transition" data-k="${q[1]}">${q[0]}</button>`).join('');
+$$('#quick button').forEach(b=>b.onclick=()=>{bubble(b.textContent,1);bot(A[b.dataset.k])});
+function toggleChat(o){o=o??chat.classList.contains('hidden');chat.classList.toggle('hidden',!o);chat.classList.toggle('flex',o);cb.setAttribute('aria-expanded',o);if(o){window.gsap&&!rm&&gsap.from(chat,{y:30,opacity:0,scale:.96,duration:.4,ease:'power3.out',transformOrigin:'bottom right'});if(!started){started=true;bot('Bonjour et bienvenue au <strong>Paris Paris</strong> ! 🍷 Je suis l\'assistant virtuel de la brasserie. Comment puis-je vous aider ?')}$('#chatIn').focus()}}
+cb.onclick=()=>toggleChat();$('#chatClose').onclick=()=>{toggleChat(false);cb.focus()};
+const kw=[[/horaire|heure|ouvert|ferm|quand|dimanche|matin|soir/,'horaires'],[/prix|tarif|cher|co[uû]t|budget|€/,'prix'],[/r[ée]serv|rdv|rendez|table|place|fourchette|thefork/,'resa'],[/adresse|o[uù] |acc[eè]s|m[ée]tro|venir|plan|itin|handicap|fauteuil/,'adresse'],[/t[ée]l[ée]phone|appel|num[ée]ro|mail|contact|joindre/,'tel'],[/terrasse|soleil|dehors/,'terrasse'],[/carte|menu|plat|manger|cuisine|chef|cocktail|boire|vin|bio|saison/,'carte']];
+$('#chatForm').onsubmit=e=>{e.preventDefault();const i=$('#chatIn'),v=i.value.trim();if(!v)return;bubble(v.replace(/</g,'&lt;'),1);i.value='';const l=v.toLowerCase()+' ',m=kw.find(k=>k[0].test(l));bot(A[m?m[1]:'def'])};
 </script>
 <a href="https://elaria.fr" target="_blank" rel="noopener" style="position:fixed;left:16px;bottom:16px;z-index:99999;font:500 12px/1 system-ui,-apple-system,sans-serif;background:rgba(17,17,17,.85);color:#fff;padding:10px 14px;border-radius:999px;text-decoration:none;backdrop-filter:blur(6px);letter-spacing:.02em">Maquette conçue par Elaria</a>
 <script>(function(){function hid(e){var c=getComputedStyle(e);return (c.opacity==='0'||c.visibility==='hidden')&&c.position!=='absolute'&&c.position!=='fixed';}function show(e){e.style.setProperty('opacity','1','important');e.style.setProperty('visibility','visible','important');e.style.setProperty('transform','none','important');}var skip='[role=dialog],[aria-modal],[class*=chat],[id*=chat],[class*=lightbox],[id*=lightbox],[class*=loader],[id*=loader],[class*=menu],[id*=menu],[class*=modal],[id*=modal]';var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var e=en.target;io.unobserve(e);setTimeout(function(){if(hid(e))show(e);},1500);}});});function scan(){document.querySelectorAll('body *').forEach(function(e){if(e.closest(skip))return;if(hid(e)&&!(e.parentElement&&hid(e.parentElement)))io.observe(e);});}window.addEventListener('load',function(){setTimeout(scan,800);setTimeout(scan,4000);});document.querySelectorAll('img').forEach(function(i){function bad(){i.style.opacity='0';}if(i.complete&&i.naturalWidth===0)bad();else i.addEventListener('error',bad);});})();</script>
